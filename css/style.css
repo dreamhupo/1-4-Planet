@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333333;
+    text-decoration: none;
+    list-style: none;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+   
+}
+
+header{
+    width: 100%;
+    height: 100px;
+}
+
+header>div {
+    float: left;
+    height: 100px;
+}
+
+.logo {
+    width: 200px;
+    padding: 50px;
+}
+
+.menu {
+    width: 800px;
+    float: right;
+    margin-right: 50px;
+    padding-top: 50px;
+    z-index: 999;
+}
+
+.main-menu {
+    height: 50px;
+    width: 800px;
+    background-color: #3cb149;
+}
+
+.sub-menu {
+    width: 1200px;
+    background-color: #1d8844;
+    height: 100px;
+    margin-left: -350px;
+    display: none;
+}
+
+.sub-menu div {
+    float: right;
+    margin-right: 50px;
+    width: 800px;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu ul li{
+    width: 25%;
+    height: 50px;
+    float: left;
+    
+}
+
+.main-menu ul li a {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.sub-menu ul li {
+    width: 25%;
+    height: 30px;
+    float: left;
+}
+
+.sub-menu ul li ul li {
+    width: 100%;
+    height: 30px;
+}
+.sub-menu ul li ul li a {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+.main-menu ul li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.sub-menu ul li ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.slide { 
+    width: 100%;
+    height:300px;
+    z-index: -99;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.slide >img {
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+
+.slide>img:first-child {
+    left: 0;
+}
+
+.main {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+     position: relative;
+}
+
+.main > div {
+    width: 400px;
+    height: 200px;
+    float: left;
+    padding-top: 10px;
+}
+
+.gallery {
+    width: 400px;
+    padding: 10px 10px 0 10px;
+/*    margin-left: 5px;*/
+}
+
+.tab {
+    width: 80px;
+    height: 30px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 0;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 20px;
+    
+}
+
+.notice  .tab { background-color: #fff;}
+.gallery .tab {background-color: #ccc;}
+
+.box {
+    width: 100%;
+    height: 160px;
+    border: 1px solid #000; 
+    margin-top: -1px;
+}
+.notice ul {
+    font-size: 0.9em;
+}
+.notice ul li { 
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #000;
+}
+
+.notice .box {
+    padding: 5px;
+}
+
+.notice ul li:first-child {
+    width: 250px;
+}
+.notice ul li:last-child {
+    width: 120px;
+}
+
+.gallery .box {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links a {
+    width: 380px;; height: 45px;
+    line-height: 45px;
+    text-align: center;
+    display: block; 
+    margin-bottom: 5px;
+    background-color: #3cb149;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+  
+}
+
+#pop {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 20px;
+    display: none;
+    
+}
+
+#pop p {
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.exit { 
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+}
+
+#pop .title {
+    padding-left: 20px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #000;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #a8ebaf;
+}
+
+footer > div {
+    float: left; height: 100px;
+    padding-right: 10px;
+}
+footer .f-logo {
+    width: 200px; margin: 20px;
+}
+
+.copy {
+    width: 600px; text-align: center; line-height: 100px;
+}
+
+.info {
+    width: 300px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
