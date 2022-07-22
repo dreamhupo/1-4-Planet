@@ -3,7 +3,7 @@ function(){
     $(".sub-menu").slideDown("slow");
 },
 function(){
-    $(".sub-menu").slideUp("slow");
+    $(".sub-menu").slideUp("fast");
 }
 );
 
