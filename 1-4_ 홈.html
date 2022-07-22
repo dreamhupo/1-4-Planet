@@ -40,8 +40,8 @@
                         </li>
                         <li>
                             <ul>
-                                <li><a href="1-4_ 개발 중.html">모든 숙제</a></li>
-                                <li><a href="1-4_ 개발 중.html">과목별 숙제</a></li>
+                                <li><a href="1-4_ 숙제.html">모든 숙제</a></li>
+                                <li><a href="1-4_ 숙제.html">과목별 숙제</a></li>
                                 <li><a href="1-4_ 개발 중.html">기타 시험 및 대회</a></li>
                             </ul>
                         </li>
@@ -113,7 +113,14 @@
            <a href="1-4_ 홈.html"><img src="images/1-4_ 로고2.png" alt="logo1" width="200" height="40"></a>
         </div>
         <div class="copy">
-             COPYRIGHT 2022  &copy; 10426 임태윤
+            <h4 id="heading">COPYRIGHT 2022  &copy; 10426 임태윤</p>
+            <script>
+                var heading = document.querySelector("#heading");
+                heading.onclick = function()
+                {
+                    heading.innerText = "사실 내가 다 만듬 -10434 황현준-"
+                }
+                </script>
         </div> 
         <div class="info">
            2022 nagwon 1-4 <br>
@@ -121,10 +128,6 @@
             TEL : 010-4631-2852
         </div>
      </footer>
-     
-     
-     
-     
  </div> 
  <script src="js/jquery-2.2.3.min.js"></script> 
  <script src="js/script.js"></script> 
