@@ -113,6 +113,48 @@
          <p class="exit"> <button onclick="closePop();">닫기</button></p>
      </div><br>
 현재 접속자 수 | <script id="_wauzwu">var _wau = _wau || []; _wau.push(["dynamic", "k6pkrdtrvn", "zwu", "c4302bffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
+    <!-- Channel Plugin Scripts -->
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "efaa0be6-40a1-4879-af4e-1ba13dc2f63c"
+  });
+</script>
+<!-- End Channel Plugin -->
      <footer>
         <div class="f-logo">
            <a href="1-4_ 홈.html"><img src="images/1-4_ 로고2.png" alt="logo1" width="200" height="40"></a>
