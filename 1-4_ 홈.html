@@ -9,12 +9,17 @@
 </head>
 <body>
 <script>
-    var rand = Math.random();
-    if (rand < 0.5) {
-        window.open('1-4_ 팝업창2.html', 'popup02', 'width=440, height=570, scrollbars= 0, toolbar=0, menubar=no');
+    var num = Math.random() * 99+1;
+    var rand = parseInt(num);
+    if (rand < 50) {
+        window.open('1-4_ 팝업창2.html', 'popup02', 'width=440, height=540, scrollbars= 0, toolbar=0, menubar=no');
     }
-    else {
-        window.open('1-4_ 팝업창.html', 'popup01', 'width=440, height=570, scrollbars= 0, toolbar=0, menubar=no');
+    if(rand > 50){
+        window.open('1-4_ 팝업창.html', 'popup01', 'width=440, height=540, scrollbars= 0, toolbar=0, menubar=no');
+    }
+    if(rand==50)
+    {
+        alert('이걸 발견한 당신!! 100분의 1에 확률을 뚫고 이걸 찾아군요 축하드립니다. 이 것을 찍어서 부관리자에게 보내 보세요 엄청난 일이 일어날겁니다!!!')
     }
 </script>
  <div class="wrapper">
@@ -100,7 +105,7 @@
             <div class="box">
                 <img src="images/1-4_ 갤러리_ 여름방학식.jpg" alt="갤러리사진1" width="100" height="100">
                 <img src="images/1-4_ 가면 무도회 사진.png" alt="갤러리사진2" width="100" height="100">
-                <img src="images/1학기 회장.png" alt="갤러리사진3" width="100" height="100">
+                <img src="images\1-4_ 1학기 회장.png" alt="갤러리사진3" width="100" height="100">
             </div>
         </div> <br>
         <div class="links">
