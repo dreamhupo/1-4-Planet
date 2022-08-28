@@ -37,5 +37,49 @@ body {
     <a href="https://forms.gle/46prfDqE9jgkv6jZ7"><div style="padding:10px; word-break:keep-all; width:1000px; background-color:#FFFFFF; color:#6570DA; border-radius:10px; font-size:1.2em; ">
   <p>▶ 직접 이야기 등록하기</p>
   <p>&nbsp;&nbsp;&nbsp;&nbsp;여러분이 지은 이야기를 직접 올려보세요!</p></div></a><br>
+           
+           
+<!-- Channel Plugin Scripts -->
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "fa16ebc5-9169-4445-8a74-9a26e1f1fb39"
+  });
+</script>
+<!-- End Channel Plugin -->
 </body>
 </html>
